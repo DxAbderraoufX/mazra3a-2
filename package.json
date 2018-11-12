@@ -1,0 +1,14 @@
+{
+  "name": "Mazra3a",
+  "version": "1.0.0",
+  "description": "My first bot ever !!!",
+  "main": "Dream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "No.Body",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.0"
+  }
+}
