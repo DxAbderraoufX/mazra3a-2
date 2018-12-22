@@ -43,7 +43,7 @@ client6.on('message', message => {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
     }
-    if (command ==="<512717747856080897> say") {
+    if (command ==="<@512717747856080897> say") {
       let thingie = args[0]; 
   message.channel.send(`${thingie}`);
       }
@@ -61,7 +61,7 @@ client6.on('message', message => {
     if(message.author.id !== "510806679898554370" )return;
     const args = message.content.trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-  if (command === "<512718328977031169> gc") {
+  if (command === "<@512718328977031169> gc") {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
     }
