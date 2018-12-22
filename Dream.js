@@ -16,11 +16,11 @@ client4.on('message', message => {
     if(message.author.id !== "510806679898554370" )return;
     const args = message.content.trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-  if (command === "<@"+client.id+"> gc") {
+  if (command === "<@"+client4.id+"> gc") {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
     }
-    if (command ==="<@"+client.id+">say") {
+    if (command ==="<@"+client4.id+">say") {
       let thingie = args[0]; 
   message.channel.send(`${thingie}`);
       }
