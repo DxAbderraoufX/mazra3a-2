@@ -17,11 +17,11 @@ client4.on('message', message => {
     if(message.author.id !== "510806679898554370" )return;
     const args = message.content.trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-  if (command === "<@"+client4.id+"> gc") {
+  if (command === "<@508264634860699673> gc") {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
     }
-    if (command ==="<@"+client4.id+">say") {
+    if (command ==="<@508264634860699673> say") {
       let thingie = args[0]; 
   message.channel.send(`${thingie}`);
       }
@@ -33,36 +33,17 @@ client4.on('message', message => {
    }
   });
   
-//Bot 5//
-client5.on('message', message => {
-  if(message.author.id !== "510806679898554370" )return;
-  const args = message.content.trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-if (command === "<@"+client5.id+"> gc") {
-  let credits = args[0]; 
-  message.channel.send(`#credits  <@510806679898554370> ${credits}`);
-  }
-  if (command ==="<@"+client5.id+">say") {
-    let thingie = args[0]; 
-message.channel.send(`${thingie}`);
-    }
- if (command ==="Check Credits")  {
-    message.channel.send('#credits')
- }
-  if (command === "Collect Dailies")  {
-    message.channel.send('#daily')
- }
-});
+
 //Bot 6//
 client6.on('message', message => {
     if(message.author.id !== "510806679898554370" )return;
     const args = message.content.trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-  if (command === "<@"+client6.id+"> gc") {
+  if (command === "<@512717747856080897> gc") {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
     }
-    if (command ==="<@"+client6.id+">say") {
+    if (command ==="<512717747856080897> say") {
       let thingie = args[0]; 
   message.channel.send(`${thingie}`);
       }
@@ -73,15 +54,18 @@ client6.on('message', message => {
       message.channel.send('#daily')
    }
   });
+
+  //Bot 7//
+
   client7.on('message', message => {
     if(message.author.id !== "510806679898554370" )return;
     const args = message.content.trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-  if (command === "<@"+client6.id+"> gc") {
+  if (command === "<512718328977031169> gc") {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
     }
-    if (command ==="<@"+client6.id+">say") {
+    if (command ==="<@512718328977031169> say") {
       let thingie = args[0]; 
   message.channel.send(`${thingie}`);
       }
@@ -126,7 +110,7 @@ client6.on('message', message => {
      }
      
  });
- client7.on('message', message => {
+client7.on('message', message => {
     // لا تغير شئ عشان ما تخرب الدنيا
  if (message.content === '!start') {
      let count = 0;
