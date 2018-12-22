@@ -6,7 +6,7 @@ const client6 = new Discord.Client();
 
 console.log("Scrpit By Dream");
 
-client.on('ready', () => {
+client4.on('ready', () => {
   console.log(`Online !`);
  
 });
