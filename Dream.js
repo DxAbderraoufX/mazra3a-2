@@ -129,7 +129,7 @@ client7.on('message', message => {
   if (message.content === "!loop") { 
     var interval = setInterval (function () {
         // use the message's channel (TextChannel) to send a new message
-        message.channel.send("!start")
+        client5.channels.get("526039937804664834").send("!start")
         .catch(console.error); // add error handling here
     }, 1 * 1800000); 
 }
