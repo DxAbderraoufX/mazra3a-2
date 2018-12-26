@@ -133,7 +133,7 @@ client7.on('message', message => {
         // use the message's channel (TextChannel) to send a new message
         client5.channels.get("526039937804664834").send("!start")
         .catch(console.error); // add error handling here
-    }, 1 * 60000); 
+    }, 1 * 1800000); 
 }
 });
 
