@@ -20,14 +20,14 @@ client4.on('message', message => {
   if (command === "<@508264634860699673> gc") {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
-    }
+    } else
     if (command ==="<@508264634860699673> say") {
       let thingie = args[0]; 
   message.channel.send(`${thingie}`);
-      }
+      } else 
    if (command ==="Check Credits")  {
       message.channel.send('#credits')
-   }
+   } else 
     if (command === "Collect Dailies")  {
       message.channel.send('#daily')
    }
@@ -42,14 +42,14 @@ client6.on('message', message => {
   if (command === "<@512717747856080897> gc") {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
-    }
+    } else 
     if (command ==="<@512717747856080897> say") {
       let thingie = args[0]; 
   message.channel.send(`${thingie}`);
-      }
+      } else 
    if (command ==="Check Credits")  {
       message.channel.send('#credits')
-   }
+   } else
     if (command === "Collect Dailies")  {
       message.channel.send('#daily')
    }
@@ -64,14 +64,14 @@ client6.on('message', message => {
   if (command === "<@512718328977031169> gc") {
     let credits = args[0]; 
     message.channel.send(`#credits  <@510806679898554370> ${credits}`);
-    }
+    } else
     if (command ==="<@512718328977031169> say") {
       let thingie = args[0]; 
   message.channel.send(`${thingie}`);
-      }
+      } else
    if (command ==="Check Credits")  {
       message.channel.send('#credits')
-   }
+   } else 
     if (command === "Collect Dailies")  {
       message.channel.send('#daily')
    }
@@ -125,6 +125,15 @@ client7.on('message', message => {
      }
      
  });
+ client5.on('message', function() {
+  if (message.content === "!loop") { 
+    var interval = setInterval (function () {
+        // use the message's channel (TextChannel) to send a new message
+        message.channel.send("!start")
+        .catch(console.error); // add error handling here
+    }, 1 * 1800000); 
+}
+});
 
 
  
